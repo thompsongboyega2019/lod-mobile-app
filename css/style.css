@@ -714,7 +714,7 @@ a {
 
 /*Custom CSS Begins*/
 .splash-screen-body {
-    background: linear-gradient(-45deg, #020432, #fff, #f30);
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
     background-size: 400% 400%;
     animation: gradient 8s ease infinite;
     height: 100vh;
@@ -722,13 +722,13 @@ a {
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 100%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
 }
 span.text-primary {
