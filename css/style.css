@@ -194,15 +194,15 @@ li.nav-parent.level-open h2 {
 .btn-info,
 .btn-outline-info:hover,
 .btn-outline-info:focus {
-    background: var(--light-primary) !important;
-    border-color: var(--light-primary) !important;
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
     color: #fff !important
 }
 
 .btn-outline-info {
-    background-color: #fff !important;
-    border-color: var(--light-primary) !important;
-    color: var(--light-primary) !important
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--white) !important
 }
 
 .btn-outline-info:hover,
