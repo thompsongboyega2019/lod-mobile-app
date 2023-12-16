@@ -734,5 +734,22 @@ a {
 span.text-primary {
     color: var(--secondary) !important;
 }
+.logo-2 {
+    width: 90px;
+}
+fieldset {
+    border: 1px solid var(--primary);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+fieldset legend {
+    float: none;
+    width: auto;
+    display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 700;
+  color: var(--secondary);
+}
 
 /*Custom CSS Ends*/
