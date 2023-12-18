@@ -207,6 +207,7 @@ li.nav-parent.level-open h2 {
 
 .btn-outline-info:hover,
 .btn-outline-info:focus {
+    background: var(--primary) !important;
     color: #fff !important
 }
 
@@ -228,7 +229,7 @@ li.nav-parent.level-open h2 {
 }
 
 .fw-light {
-    font-weight: 200
+    font-weight: 200;
 }
 
 a {
@@ -529,8 +530,8 @@ a {
 .custom-check .btn.show,
 .custom-check .btn:first-child:active,
 :not(.btn-check)+.btn:active {
-    background: #16bef0 !important;
-    border-color: #16bef0 !important;
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
     color: #fff !important
 }
 
@@ -749,7 +750,28 @@ fieldset legend {
   padding-left: 10px;
   padding-right: 10px;
   font-weight: 700;
-  color: var(--secondary);
+  color: var(--primary);
+}
+.form-check a {
+    float: right;
+}
+.check-btn {
+    position: absolute;
+  top: 51.1%;
+  left: 13.9%;
+  font-weight: 900;
+  display: inline-block;
+  visibility: hidden;
+  color: #fff;
+}
+.form-check-input:checked + span.check-btn {
+    visibility: visible;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-16 {
+    font-size: 16px;
 }
 
 /*Custom CSS Ends*/
