@@ -738,12 +738,12 @@ span.text-primary {
 .logo-2 {
     width: 90px;
 }
-fieldset {
+/*fieldset {
     border: 1px solid var(--primary);
     padding: 20px 20px;
     border-radius: 20px;
-}
-fieldset legend {
+}*/
+/*fieldset legend {
     float: none;
     width: auto;
     display: inline-block;
@@ -751,7 +751,7 @@ fieldset legend {
   padding-right: 10px;
   font-weight: 700;
   color: var(--primary);
-}
+}*/
 .form-check a {
     float: right;
 }
@@ -776,5 +776,6 @@ fieldset legend {
 .fs-14 {
     font-size: 14px;
 }
+
 
 /*Custom CSS Ends*/
