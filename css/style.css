@@ -783,10 +783,10 @@ span.text-primary {
     background-color: var(--white);
     background-size: cover;
     background-position: center center;
-    height: 200px;
+    height: 160px;
 }
 .header-div-logo {
-    width: 70px;
+    width: 65px;
     margin: 0 auto;
 }
 
