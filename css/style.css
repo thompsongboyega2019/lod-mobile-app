@@ -106,7 +106,9 @@ li.nav-parent.level-open h2 {
 .text-primary {
     color: var(--primary) !important
 }
-
+.text-secondary {
+    color: var(--secondary) !important;
+}
 .text-warning {
     color: var(--warning) !important
 }
@@ -775,6 +777,13 @@ span.text-primary {
 }
 .fs-14 {
     font-size: 14px;
+}
+.breadcrumb {
+    background-image: url("../img/breadcrumb.jpg");
+    background-color: var(--white);
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
 }
 
 

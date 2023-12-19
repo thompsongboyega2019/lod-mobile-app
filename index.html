@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.svg" type="image/png">
-    <title>LOD Realtors - Splash Screen</title>
+    <title>LOD Realtors - Landing</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
 
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -18,21 +23,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-primary splash-screen-body">
-    <div class="index d-flex align-items-center justify-content-center vh-100">
-        <div class="text-center p-3">
-            <div class="mb-5 pb-5">
-                <a href="landing.html" class="gap-2 text-white text-center">
-                    <div class="d-inline-block mb-4 animate__animated animate__fadeInDown">
-                        <img src="img/logo.png" alt="LOD Realtors" class="img-fluid logo">
+<body class="">
+    <div class="landing text-center vh-100">
+        <div class="landing-slider vh-100 m-0">
+            <div class="landing-slider-item">
+                <div class="card bg-transparent border-0 pt-5 mt-6 animate__animated animate__fadeInDown">
+                    <img src="img/landing/all-in-one.png" alt class="rounded-0 card-img-top landing-img">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-2 lh-base">All-in-one <span class="fw-bolder text-primary">digital
+                                solution </span> system</h4>
+                                <p class="card-text text-dark fs-15">Seamless management of your homes and offices from a digital dashboard</p>
                     </div>
-                </a>
+                </div>
+            </div>
+            <div class="landing-slider-item">
+                <div class="card bg-transparent border-0 pt-5 mt-6">
+                    <img src="img/landing/utilities.png" alt class="rounded-0 card-img-top landing-img">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-2 lh-base">Smart <span
+                                class="fw-bolder text-primary">Utility </span>Vending</h4>
+                                <p class="card-text text-dark fs-15">Manage your Electricity, Water and Gas meters with our digital solution.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="landing-slider-item">
+                <div class="card bg-transparent border-0 pt-5 mt-6">
+                    <img src="img/landing/payment.png" alt="Simplified Payment Process" class="rounded-0 card-img-top landing-img">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-2 lh-base">Simplified <span class="fw-bolder text-primary">Payment</span> Process</h4>
+                            <p class="card-text text-dark fs-15">Easily initiate payment for dues and utilities on your digital device.</p>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="footer fixed-bottom p-3 animate__animated animate__fadeIn animate__delay-1s">
-        <a href="landing.html" class="btn btn-secondary btn-lg w-100">Get Started</a>
+    <div class="footer fixed-bottom d-flex justify-content-end m-4 animate__animated animate__fadeInUp animate__delay-1s">
+        <a href="login.html" class="btn btn-secondary btn-lg w-100 rounded-4">Get Started</a>
     </div>
 
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
@@ -42,11 +70,19 @@
     <script src="js/hc-offcanvas-nav.js" type="text/javascript"></script>
 
     <script src="js/script.js" type="text/javascript"></script>
-    <script src="js/rocket-loader.min.js" data-cf-settings="01510185f20aaac5c4b8ee02-|49" defer></script>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+
+    <script src="js/slick.min.js" type="text/javascript"></script>
+
+    <script src="js/hc-offcanvas-nav.js" type="text/javascript"></script>
+
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="3185e214f0ef0ebfae4bd86e-|49" defer></script>
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
         integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-        data-cf-beacon='{"rayId":"83555a766bd77760","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
+        data-cf-beacon='{"rayId":"83555a787904b8a8","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
         crossorigin="anonymous"></script>
 </body>
 
