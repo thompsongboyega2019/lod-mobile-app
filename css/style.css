@@ -783,11 +783,15 @@ span.text-primary {
     background-color: var(--white);
     background-size: cover;
     background-position: center center;
-    height: 180px;
+    height: 160px;
 }
 .header-div-logo {
-    width: 50px;
-    margin: 0 auto;
+    position: relative;
+    right: 0px;
+    width: 100%;
+}
+.breadcrumb .header-div-logo img {
+    width: 65px;
 }
 
 /*Custom CSS Ends*/
