@@ -27,7 +27,7 @@
     <div class="sign-in pb-4">
         <div class="bg-primary breadcrumb px-4 pt-1">
             <div class="position-absolute z-2">
-                <a href="login.html" class="text-secondary">
+                <a href="javascript:history.back()" class="text-secondary">
                     <span class="mdi mdi-arrow-left mdi-36px"></span></a>
             </div>
             <div class="header-div-logo mt-2 text-end">
@@ -43,13 +43,33 @@
         <form class="px-4">
 
             <div class="mb-3">
+                <label for="exampleFormControlEmail" class="form-label mb-1 fs-16 fw-bold">Full Name</label>
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlFullname">
+                    <span class="input-group-text bg-transparent rounded-0 border-0" id="fullname">
+                        <span class="mdi mdi-email-outline mdi-18px text-muted"></span>
+                    </span>
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0" placeholder="Full Name"
+                        aria-label="Full Name" aria-describedby="fullname" value="">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlEmail" class="form-label mb-1 fs-16 fw-bold">Phone number</label>
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlEmail">
+                    <span class="input-group-text bg-transparent rounded-0 border-0" id="phoneNumber">
+                        <span class="mdi mdi-email-outline mdi-18px text-muted"></span>
+                    </span>
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0" placeholder="Phone Number"
+                        aria-label="Phone Number" aria-describedby="phonenumber" value="">
+                </div>
+            </div> 
+            <div class="mb-3">
                 <label for="exampleFormControlEmail" class="form-label mb-1 fs-16 fw-bold">Email</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlEmail">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="mail">
                         <span class="mdi mdi-email-outline mdi-18px text-muted"></span>
                     </span>
-                    <input type="email" class="form-control bg-transparent rounded-0 border-0 px-0" placeholder="email"
-                        aria-label="Type your email or phone" aria-describedby="mail" value="">
+                    <input type="email" class="form-control bg-transparent rounded-0 border-0 px-0" placeholder="Email"
+                        aria-label="Email" aria-describedby="mail" value="">
                 </div>
             </div>
             <div class="mb-3">
@@ -67,11 +87,11 @@
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
                         <span class="mdi mdi-lock-outline mdi-18px text-muted"></span></span>
                     <input type="password" class="form-control bg-transparent rounded-0 border-0 px-0"
-                        placeholder="confirm password" aria-label="Type your password" aria-describedby="password" value="">
+                        placeholder="Confirm password" aria-label="Password" aria-describedby="password" value="">
                 </div>
             </div>
             <div>
-                <a href="#" class="btn btn-info btn-lg w-100 rounded-4 mb-2">Login</a>
+                <a href="#" class="btn btn-info btn-lg w-100 rounded-4 mb-2">Register</a>
                 <div class="mt-2 text-center">
                     <p class="fs-16">Already have an account? <a class="text-muted" href="login.html">Sign In</a></p>
                 </div>
