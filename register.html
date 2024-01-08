@@ -44,25 +44,25 @@
             <div class="row row-cols-2 g-2">
                 <div class="col">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icons.png" alt="" class="img-fluid px-2 img-80">
+                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
                             <p class="text-truncate pt-2 m-0 fw-700">Estate Manager</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icons.png" alt="" class="img-fluid px-2 img-80">
+                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
                             <p class="text-truncate pt-2 m-0 fw-700">EXCOs</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icons.png" alt="" class="img-fluid px-2 img-80">
-                            <p class="text-truncate pt-2 m-0 fw-700">Resident</p>
+                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
+                            <p class="text-truncate pt-2 m-0 fw-700">Residents</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icons.png" alt="" class="img-fluid px-2 img-80">
+                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
                             <p class="text-truncate pt-2 m-0 fw-700">Artisan/Security</p>
                     </div>
                 </div>
@@ -111,11 +111,66 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlConfirmPassword" class="form-label mb-1 fs-16 fw-bold">Confirm Password</label>
-                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormConfirmPassword">
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlConfirmPassword">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
                         <span class="mdi mdi-lock-outline mdi-18px text-muted"></span></span>
                     <input type="password" class="form-control bg-transparent rounded-0 border-0 px-0"
                         placeholder="Confirm password" aria-label="Password" aria-describedby="password" value="">
+                </div>
+            </div>
+            <div class="lanlordOrTenant">
+                <div class="mb-3">
+                    <label for="chooseResident" class="form-label mb-1 fs-16 fw-bold">Category</label>
+                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="chooseResident">
+                        <option value="">-- Choose category --</option>
+                        <option value="">Landlord</option>
+                        <option value="">Tenant</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="selectEstate" class="form-label mb-1 fs-16 fw-bold">Estate Type</label>
+                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectResident">
+                        <option value="">-- Select estate type --</option>
+                        <option value="">Freehold</option>
+                        <option value="">Leasehold</option>
+                        <option value="">Concurrent</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="chooseCountry" class="form-label mb-1 fs-16 fw-bold">Country</label>
+                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="chooseCountry">
+                        <option value="">-- Choose country --</option>
+                        <option value="">Nigeria</option>
+                        <option value="">South Africa</option>
+                        <option value="">Ghana</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="chooseState" class="form-label mb-1 fs-16 fw-bold">State</label>
+                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="chooseState">
+                        <option value="">-- Choose state --</option>
+                        <option value="">Lagos</option>
+                        <option value="">Kano</option>
+                        <option value="">Ondo</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="chooseLga" class="form-label mb-1 fs-16 fw-bold">LGA</label>
+                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="chooseLga">
+                        <option value="">-- Choose LGA --</option>
+                        <option value="">Kosofe</option>
+                        <option value="">Onipanu</option>
+                        <option value="">Surulere</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlLga" class="form-label mb-1 fs-16 fw-bold">LGA</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlLga">
+                        <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
+                            <span class="mdi mdi-map-marker mdi-18px text-muted"></span></span>
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
+                            placeholder="Local Government Area" aria-label="lga" aria-describedby="lga" value="">
+                    </div>
                 </div>
             </div>
             <div>

@@ -2635,7 +2635,8 @@ textarea.form-control-lg {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none
+    appearance: none;
+    color: var(--bs-secondary-color);;
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -2647,7 +2648,7 @@ textarea.form-control-lg {
 .form-select:focus {
     border-color: #86b7fe;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
 }
 
 .form-select[multiple],
