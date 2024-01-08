@@ -801,4 +801,10 @@ span.text-primary {
     padding-top: .8rem !important;
     padding-bottom: .8rem !important;
 }
+.user-category {
+    cursor: pointer;
+}
+#scrollText {
+    color: var(--secondary);
+}
 /*Custom CSS Ends*/
