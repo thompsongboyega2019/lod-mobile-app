@@ -740,20 +740,6 @@ span.text-primary {
 .logo-2 {
     width: 90px;
 }
-/*fieldset {
-    border: 1px solid var(--primary);
-    padding: 20px 20px;
-    border-radius: 20px;
-}*/
-/*fieldset legend {
-    float: none;
-    width: auto;
-    display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-weight: 700;
-  color: var(--primary);
-}*/
 .form-check a {
     float: right;
 }
@@ -778,6 +764,18 @@ span.text-primary {
 .fs-14 {
     font-size: 14px;
 }
+.fs-17 {
+    font-size: 17px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-19 {
+    font-size: 19px;
+}
+.fs-20 {
+    font-size: 20px;
+}
 .breadcrumb {
     background-image: url("../img/breadcrumb.jpg");
     background-color: var(--white);
@@ -792,6 +790,9 @@ span.text-primary {
 }
 .breadcrumb .header-div-logo img {
     width: 65px;
+}
+.landing-logo {
+    width: 80px;
 }
 
 /*Custom CSS Ends*/

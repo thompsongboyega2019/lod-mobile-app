@@ -4386,4 +4386,11 @@ print {
     animation-name: slideOutUp
 }
 
+.animate-duration-4 {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-duration: calc(var(--animate-duration)*4);
+    animation-duration: calc(var(--animate-duration)*4)
+}
+
 
