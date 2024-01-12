@@ -452,12 +452,12 @@ a {
 .doctor-book-back {
     position: relative;
     overflow: hidden;
-    height: 150px;
+    height: 140px;
 }
 
 .doctor-book-back-title {
     font-family: sofia sans extra condensed, sans-serif;
-    padding-right: 77px;
+/*    padding-right: 77px;*/
     letter-spacing: .8px;
     line-height: 28px !important
 }
