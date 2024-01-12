@@ -452,7 +452,7 @@ a {
 .doctor-book-back {
     position: relative;
     overflow: hidden;
-    height: 140px;
+    height: 150px;
 }
 
 .doctor-book-back-title {
@@ -813,5 +813,8 @@ span.text-primary {
 }
 .bg-secondary {
     background-color: var(--secondary) !important;
+}
+.slide-title {
+    font-size: 22px !important;
 }
 /*Custom CSS Ends*/
