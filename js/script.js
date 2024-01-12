@@ -73,13 +73,14 @@ $(document).keydown(function (e) {
         slidesToScroll: 1,
     });
     $('.available-doctor').slick({
-        infinite: false,
+        infinite: true,
         dots: false,
         arrows: false,
         speed: 300,
-        autoplay: false,
-        slidesToShow: 1.2,
+        autoplay: true,
+        slidesToShow: 1,
         slidesToScroll: 1,
+        initialSlide: 0,
     });
     $('.recent-doctors').slick({
         infinite: false,

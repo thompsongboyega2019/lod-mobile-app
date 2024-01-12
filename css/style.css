@@ -292,12 +292,9 @@ a {
 }
 
 .small-sm {
-    font-size: 12px
+    font-size: 12px; 
 }
 
-.fs-14 {
-    font-size: 14px
-}
 
 .border-primary-dotted {
     border: 1px dashed var(--primary)
@@ -454,7 +451,8 @@ a {
 
 .doctor-book-back {
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    height: 140px;
 }
 
 .doctor-book-back-title {
@@ -761,8 +759,11 @@ span.text-primary {
 .fs-16 {
     font-size: 16px;
 }
+.fs-13 {
+    font-size: 13px !important;
+}
 .fs-14 {
-    font-size: 14px;
+    font-size: 14px !important;
 }
 .fs-17 {
     font-size: 17px;
@@ -806,5 +807,11 @@ span.text-primary {
 }
 #scrollText {
     color: var(--secondary);
+}
+.bg-primary-two {
+    background-color: var(--primary) !important;
+}
+.bg-secondary {
+    background-color: var(--secondary) !important;
 }
 /*Custom CSS Ends*/
