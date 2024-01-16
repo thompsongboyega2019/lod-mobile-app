@@ -796,7 +796,7 @@ span.text-primary {
     width: 80px;
 }
 .img-80 {
-    width: 80px !important;
+    width: 50px !important;
 }
 .form-select {
     padding-top: .8rem !important;
@@ -816,5 +816,9 @@ span.text-primary {
 }
 .slide-title {
     font-size: 22px !important;
+}
+.category-active {
+  filter: grayscale(100%);
+  opacity: .8;
 }
 /*Custom CSS Ends*/

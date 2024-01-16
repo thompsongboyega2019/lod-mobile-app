@@ -41,17 +41,11 @@
             </div>
         </div>
         <div class="p-3 mb-2">
-            <div class="row row-cols-3 g-2">
+            <div class="row row-cols-4 g-2">
                 <div id="residents" class="col user-category">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
                             <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
                             <p class="text-truncate pt-2 m-0 fw-700">Residents</p>
-                    </div>
-                </div>
-                <div id="sub-resident" class="col user-category">
-                    <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
-                            <p class="text-truncate pt-2 m-0 fw-700">Sub Resident</p>
                     </div>
                 </div>
                 <div id="estateManager" class="col user-category">
@@ -78,6 +72,14 @@
             <p id="scrollText" class="fs-16 mb-1 mt-4 animate__animated animate__pulse animate__infinite">Scroll down to see other fields <span class="mdi mdi-arrow-down"></span></p>
         </div>
         <form id="registerationForm" class="px-4">
+            <div class="mb-3 landlordOrTenant">
+                <label for="chooseState" class="form-label mb-1 fs-16 fw-bold">Account Type</label>
+                <select id="account-type" class="form-control form-select form-select-lg py-1 fs-6" name="" onchange="chooseAccountType()">
+                    <option value="">-- Choose account type --</option>
+                    <option value="">Main Account</option>
+                    <option value="">Linked Account</option>
+                </select>
+            </div>
 
             <div id="hoh-id-field" class="mb-3">
                 <label for="exampleFormControlHohId" class="form-label mb-1 fs-16 fw-bold">Enter Head Of House ID</label>
@@ -125,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3 general-fields">
                 <label for="exampleFormControlFullname" class="form-label mb-1 fs-16 fw-bold">Full Name</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlFullname">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="fullname">
@@ -135,7 +137,7 @@
                         aria-label="Full Name" aria-describedby="fullname" value="">
                 </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 general-fields">
                 <label for="exampleFormControlPhonenumber" class="form-label mb-1 fs-16 fw-bold">Phone number</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPhonenumber">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="phoneNumber">
@@ -145,7 +147,7 @@
                         aria-label="Phone Number" aria-describedby="phonenumber" value="">
                 </div>
             </div> 
-            <div class="mb-3">
+            <div class="mb-3 general-fields">
                 <label for="exampleFormControlEmail" class="form-label mb-1 fs-16 fw-bold">Email</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlEmail">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="mail">
@@ -155,7 +157,7 @@
                         aria-label="Email" aria-describedby="mail" value="">
                 </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 general-fields">
                 <label for="exampleFormControlPassword" class="form-label mb-1 fs-16 fw-bold">Password</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPassword">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
@@ -164,7 +166,7 @@
                         placeholder="password" aria-label="Type your password" aria-describedby="Password" value="">
                 </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 general-fields">
                 <label for="exampleFormControlConfirmPassword" class="form-label mb-1 fs-16 fw-bold">Confirm Password</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlConfirmPassword">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
