@@ -23,8 +23,11 @@ function selectSignUp() {
             x.classList.add("d-none");
         }
         artisanSecurity.getElementsByClassName("bg-white")[0].classList.remove("category-active", "shadow-lg");
+        excos.getElementsByClassName("bg-white")[0].classList.remove("category-active", "shadow-lg");
         let hideArtisanSecurity = document.getElementsByClassName("artisanOrSecurity");
         hideArtisanSecurity[0].classList.add("d-none");
+        let hideExcos = document.getElementsByClassName("excos");
+        hideExcos[0].classList.add("d-none");
         scrollText.classList.remove("d-none");
     });
     artisanSecurity.addEventListener("click", function () {
@@ -36,11 +39,34 @@ function selectSignUp() {
         for (const x of hideResidents) {
             x.classList.add("d-none");
         }
+        let hideExcos = document.getElementsByClassName("excos");
+        hideExcos[0].classList.add("d-none");
         for (const x of generalFields) {
             x.classList.remove("d-none");
         }
         residents.getElementsByClassName("bg-white")[0].classList.remove("category-active", "shadow-lg");
+        excos.getElementsByClassName("bg-white")[0].classList.remove("category-active", "shadow-lg");
         scrollText.classList.remove("d-none");
+        hohField.classList.add("d-none");
+    });
+    excos.addEventListener("click", function () {
+        excos.getElementsByClassName("bg-white")[0].classList.add("category-active", "shadow-lg"); 
+        a.classList.remove("d-none");
+        let hideResidents = document.getElementsByClassName("landlordOrTenant");
+        for (const x of hideResidents) {
+            x.classList.add("d-none");
+        }
+        let hideArtisanSecurity = document.getElementsByClassName("artisanOrSecurity");
+        hideArtisanSecurity[0].classList.add("d-none");
+        for (const x of generalFields) {
+            x.classList.add("d-none");
+        }
+        let hideExcos = document.getElementsByClassName("excos");
+        hideExcos[0].classList.remove("d-none");
+        residents.getElementsByClassName("bg-white")[0].classList.remove("category-active", "shadow-lg");
+        artisanSecurity.getElementsByClassName("bg-white")[0].classList.remove("category-active", "shadow-lg");
+        scrollText.classList.add("d-none");
+        hohField.classList.add("d-none");
     })
 
 }
@@ -80,7 +106,7 @@ function chooseAccountType() {
 }
 // Account type option controller ends 
 
-// Head Of House info controller & HOH Id validation start
+// Register Screen - Head Of House info controller & HOH Id validation start
 function displayHohInfo() {
     var hohInfo = document.querySelector("#hoh-info");
     hohInfo.classList.add("d-none");
@@ -89,9 +115,10 @@ displayHohInfo();
 
 var verifyHohId = document.querySelector("#hohId + input");
 verifyHohId.addEventListener("blur", showInfo);
+// verifyHohId.addEventListener("focus", showInfoTwo);
 
 function showInfo() {
-    if (verifyHohId.value === "") {
+    if (verifyHohId.value.length < 1) {
         document.querySelector("#id-error-message").innerHTML = "<b><i>Please provide your Head Of House Id</i></b>";
         document.querySelector("#hoh-info").classList.add("d-none");
     } else {
@@ -100,4 +127,26 @@ function showInfo() {
     }
 }
 // Head Of House info controller & HOH Id validation end
+
+
+// Register Screen - User Information controller & User Id Validation start
+function displayUserInfo() {
+    let userInfo = document.querySelector("#user-info");
+    userInfo.classList.add("d-none");
+}
+displayUserInfo();
+
+var verifyUserId = document.querySelector("#userId + input");
+verifyUserId.addEventListener("blur", showUserInfo);
+function showUserInfo() {
+    if (verifyUserId.value.length < 1) {
+        document.querySelector("#userId-error-message").innerHTML = "<b><i>Please provide your Id</i></b>";
+        document.querySelector("#user-info").classList.add("d-none");
+    } else {
+        document.querySelector("#user-info").classList.remove("d-none");
+        document.querySelector("#userId-error-message").classList.add("d-none").classList.add("animate");
+    }
+}
+
+
 
