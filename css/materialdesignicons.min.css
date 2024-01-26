@@ -28816,6 +28816,11 @@
     font-size: 24px
 }
 
+.mdi-30px.mdi-set,
+.mdi-30px.mdi:before {
+    font-size: 30px
+}
+
 .mdi-36px.mdi-set,
 .mdi-36px.mdi:before {
     font-size: 36px
