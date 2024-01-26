@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <title>LOD Realtors - Edit Profile</title>
+    <title>LOD Realtors - Upload Vehicle Information</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -44,59 +44,50 @@
         </div>
 
         <div class="vh-100 my-auto overflow-auto px-3 pt-4">
-            <form action="profile.html">
+            <form action="#">
                 <div class="mb-3">
-                    <label for="exampleFormControlFullname" class="form-label mb-1 fw-bold">Full Name</label>
-                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlFullname">
-                    <span class="input-group-text bg-transparent rounded-0 border-0" id="fullname">
-                        <span class="mdi mdi-account mdi-18px text-muted"></span>
-                    </span>
-                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
-                        aria-label="Full Name" aria-describedby="fullname" value="Busayo Shokunbi">
+                    <label for="exampleFormControlOwnername" class="form-label mb-1 fw-bold">Owner's Name</label>
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlOwnername">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                        aria-label="Owner name" aria-describedby="ownername" value="Shokunbi Busayo">
                 </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlDob" class="form-label mb-1 fw-bold">Date Of Birth</label>
-                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlDob">
-                    <span class="input-group-text bg-transparent rounded-0 border-0" id="dob">
-                        <span class="mdi mdi-lock-outline mdi-18px text-muted"></span></span>
-                    <input type="date" class="form-control bg-transparent rounded-0 border-0 px-0"
-                        placeholder="" aria-label="Dob" aria-describedby="dob" value="13-12-2000">
+                    <label for="exampleFormControlPlatenumber" class="form-label mb-1 fw-bold">Plate Number</label>
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPlatenumber">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                        aria-label="Plate number" aria-describedby="platenumber" value="EKYS97BP">
                 </div>
                 </div>
                 <div class="mb-3">
-                    <label for="gender" class="form-label mb-1 fw-bold">Gender</label>
-                <div class="input-group border bg-white rounded-3 py-1">
-                    <label class="input-group-text bg-transparent rounded-0 border-0" for="gender">
-                        <span class="mdi mdi-account-group-outline mdi-18px text-muted"></span>
-                    </label>
-                <select class="form-control form-select form-select-lg py-1 fs-6 rounded-0 border-0" name="" id="gender">
-                    <option value="">Male</option>
-                    <option value="">Female</option>
-                </select>
+                    <label for="exampleFormControlVehiclemake" class="form-label mb-1 fw-bold">Vehicle Make</label>
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlVehiclemake">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                        aria-label="Vehicle make" aria-describedby="vehiclemake" value="Honda">
                 </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlPhonenumber" class="form-label mb-1 fw-bold">Phone number</label>
-                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPhonenumber">
-                    <span class="input-group-text bg-transparent rounded-0 border-0" id="phoneNumber">
-                        <span class="mdi mdi-cellphone mdi-18px text-muted"></span>
-                    </span>
-                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
-                        aria-label="Phone Number" aria-describedby="phonenumber" value="+234 810 888 58996">
+                    <label for="exampleFormControlModel" class="form-label mb-1 fw-bold">Model</label>
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlModel">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                        aria-label="Model" aria-describedby="model" value="Honda">
                 </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlEmail" class="form-label mb-1 fw-bold">Email</label>
-                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlEmail">
-                    <span class="input-group-text bg-transparent rounded-0 border-0" id="mail">
-                        <span class="mdi mdi-email-outline mdi-18px text-muted"></span>
-                    </span>
-                    <input type="email" class="form-control bg-transparent rounded-0 border-0 px-0"
-                        aria-label="Email" aria-describedby="mail" value="info@lodrealtor.com">
+                    <label for="exampleFormControlColor" class="form-label mb-1 fw-bold">Color</label>
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlColor">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                        aria-label="Color" aria-describedby="color" value="Black">
                 </div>
                 </div>
-                <button type="submit" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-4">Update Profile</button>
+                <div class="mb-3">
+                    <label for="exampleFormControlPurpose" class="form-label mb-1 fw-bold">Purpose</label>
+                <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPurpose">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                        aria-label="Purpose" aria-describedby="purpose" value="Private">
+                </div>
+                </div>
+                <button type="submit" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-4">Update Information</button>
             </form>
         </div>
 
