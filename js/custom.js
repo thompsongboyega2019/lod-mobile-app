@@ -1,4 +1,4 @@
-// Sign up category rgistration field starts
+// Sign up category registration field starts
 
 function selectSignUp() {
     var a = document.getElementById("registerationForm");
@@ -71,7 +71,7 @@ function selectSignUp() {
 
 }
 selectSignUp();
-// Sign up category rgistration field ends
+// Sign up category registration field ends
 
 
 // Account type option controller starts 
@@ -118,9 +118,10 @@ verifyHohId.addEventListener("blur", showInfo);
 // verifyHohId.addEventListener("focus", showInfoTwo);
 
 function showInfo() {
-    if (verifyHohId.value.length < 1) {
+    if (verifyHohId.value == "" || verifyHohId.value.length < 1) {
         document.querySelector("#id-error-message").innerHTML = "<b><i>Please provide your Head Of House Id</i></b>";
         document.querySelector("#hoh-info").classList.add("d-none");
+        return false;
     } else {
         document.querySelector("#hoh-info").classList.remove("d-none");
         document.querySelector("#id-error-message").classList.add("d-none");
@@ -148,5 +149,11 @@ function showUserInfo() {
     }
 }
 
+// QR Download button starts
+var qrDownloadButton = document.querySelector("#download-qr-btn");
+qrDownloadButton.addEventListener("click", function () {
+    document.querySelector("#code").click();
+})
+// QR Download button ends
 
 
