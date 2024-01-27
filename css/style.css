@@ -824,5 +824,7 @@ span.text-primary {
 .qr-code-div img {
     width: 280px;
 }
-
+.vehicle-info-dive img {
+    width: 250px;
+}
 /*Custom CSS Ends*/
