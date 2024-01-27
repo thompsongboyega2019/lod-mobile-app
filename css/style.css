@@ -821,5 +821,8 @@ span.text-primary {
   filter: grayscale(100%);
   opacity: .8;
 }
+.qr-code-div img {
+    width: 280px;
+}
 
 /*Custom CSS Ends*/
