@@ -390,7 +390,8 @@ a {
 }
 
 .body-fix-osahan-footer {
-    padding-bottom: 82px
+    padding-bottom: 82px;
+    padding-top: 60px;
 }
 
 .footer-bottom-nav {
@@ -826,5 +827,13 @@ span.text-primary {
 }
 .vehicle-info-dive img {
     width: 250px;
+}
+.app-header {
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+}
+.mt-60 {
+    margin-top: 60px !important;
 }
 /*Custom CSS Ends*/
