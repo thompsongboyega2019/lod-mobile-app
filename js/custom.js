@@ -1,5 +1,5 @@
-// Sign up category registration field starts
 
+// Sign up category registration field starts
 function selectSignUp() {
     var a = document.getElementById("registerationForm");
     a.classList.add("d-none");
@@ -69,7 +69,7 @@ function selectSignUp() {
         hohField.classList.add("d-none");
     })
 
-}
+};
 selectSignUp();
 // Sign up category registration field ends
 
@@ -103,14 +103,31 @@ function chooseAccountType() {
             showResidents[1].classList.add("d-none");
             break;
     };
-}
+};
 // Account type option controller ends 
+
+
+
+function chooseBill() {
+    var a = document.getElementById("chooseBill");
+    let b = document.querySelector("#billamount + input");
+    switch (a.selectedIndex) {
+        case 1:
+            b.value == a.selectedIndex.value;
+            break;
+            case 2:
+                b.value == a.selectedIndex.value;
+                break;
+        default:
+            break;
+    }
+}
 
 // Register Screen - Head Of House info controller & HOH Id validation start
 function displayHohInfo() {
     var hohInfo = document.querySelector("#hoh-info");
     hohInfo.classList.add("d-none");
-}
+};
 displayHohInfo();
 
 var verifyHohId = document.querySelector("#hohId + input");
@@ -126,7 +143,7 @@ function showInfo() {
         document.querySelector("#hoh-info").classList.remove("d-none");
         document.querySelector("#id-error-message").classList.add("d-none");
     }
-}
+};
 // Head Of House info controller & HOH Id validation end
 
 
@@ -134,26 +151,22 @@ function showInfo() {
 function displayUserInfo() {
     let userInfo = document.querySelector("#user-info");
     userInfo.classList.add("d-none");
-}
+};
 displayUserInfo();
 
 var verifyUserId = document.querySelector("#userId + input");
-verifyUserId.addEventListener("blur", showUserInfo);
-function showUserInfo() {
-    if (verifyUserId.value.length < 1) {
+verifyUserId.addEventListener("blur", function () {
+    if (verifyUserId.value == "" || verifyUserId.value.length < 1) {
         document.querySelector("#userId-error-message").innerHTML = "<b><i>Please provide your Id</i></b>";
         document.querySelector("#user-info").classList.add("d-none");
     } else {
         document.querySelector("#user-info").classList.remove("d-none");
         document.querySelector("#userId-error-message").classList.add("d-none").classList.add("animate");
     }
-}
+});
 
-// QR Download button starts
-var qrDownloadButton = document.querySelector("#download-qr-btn");
-qrDownloadButton.addEventListener("click", function () {
-    document.querySelector("#code").click();
-})
-// QR Download button ends
+
+
+
 
 

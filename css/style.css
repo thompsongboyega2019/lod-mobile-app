@@ -755,7 +755,7 @@ span.text-primary {
     visibility: visible;
 }
 .fs-15 {
-    font-size: 15px;
+    font-size: 15px !important;
 }
 .fs-16 {
     font-size: 16px;
