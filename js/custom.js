@@ -108,20 +108,7 @@ function chooseAccountType() {
 
 
 
-function chooseBill() {
-    var a = document.getElementById("chooseBill");
-    let b = document.querySelector("#billamount + input");
-    switch (a.selectedIndex) {
-        case 1:
-            b.value == a.selectedIndex.value;
-            break;
-            case 2:
-                b.value == a.selectedIndex.value;
-                break;
-        default:
-            break;
-    }
-}
+
 
 // Register Screen - Head Of House info controller & HOH Id validation start
 function displayHohInfo() {
