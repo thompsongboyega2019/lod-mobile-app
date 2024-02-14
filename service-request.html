@@ -46,45 +46,44 @@
 
         <div class="vh-100 my-auto overflow-auto px-3 pt-4 mt-60">
             <form action="service-request-detail.html">
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label for="exampleFormControlPayerId" class="form-label mb-1 fw-bold">User ID</label>
                     <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPayerId">
                         <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
                             aria-label="Payer Id" aria-describedby="payerId">
                     </div>
-                </div>
+                </div> -->
                 <p id="payerid-error-message" class="fs-13 mb-1 text-secondary"></p>
                 <div id="payer-info"
-                    class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3 d-none">
-                    <h6 class="pb-2">Profile</h6>
+                    class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3 animate__animated animate__fadeIn">
+                    <h6 class="pb-2">Resident Information</h6>
                     <div class="d-flex">
                         <div class="col">
                             <p><span class="text-muted small">Full Name</span><br>Busayo Shokunbi</p>
                         </div>
                         <div class="col">
-                            <p><span class="text-muted small">Gender</span><br>Male</p>
+                            <p><span class="text-muted small">Phone</span><br>018868**3799</p>
                         </div>
                     </div>
                     <div class="d-flex">
-                        <div class="col">
-                            <p><span class="text-muted small">Phone</span><br>018868**3799</p>
-                        </div>
                         <div class="col">
                             <p><span class="text-muted small">Email</span><br>info@thebuston.com.ng</p>
                         </div>
-                    </div>
-                    <div class="d-flex">
                         <div class="col">
                             <p><span class="text-muted small">Country</span><br>Nigeria</p>
                         </div>
-                        <div class="col">
-                            <p><span class="text-muted small">State</span><br>Lagos</p>
-                        </div>
+                        
                     </div>
                     <div class="d-flex">
                         <div class="col">
+                            <p><span class="text-muted small">State</span><br>Lagos</p>
+                        </div>
+                        <div class="col">
                             <p><span class="text-muted small">Estate</span><br>Crowns Estate</p>
                         </div>
+                    </div>
+                    <div class="d-flex">
+                        
                         <div class="col">
                             <p><span class="text-muted small">Residential Address</span><br>Flat 5 - House 10,Ogudu Road
                             </p>
@@ -92,11 +91,36 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="selectpriority" class="form-label mb-1 fs-16 fw-bold">Priority</label>
-                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectpriority">
+                    <label for="selectPriority" class="form-label mb-1 fs-16 fw-bold">Priority</label>
+                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectPriority">
                         <option value="">-- Select priority --</option>
                         <option value="">Urgent</option>
                         <option value="">Anytime</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="selectService" class="form-label mb-1 fs-16 fw-bold">Services</label>
+                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectService">
+                        <option value="">-- Select service --</option>
+                        <option value="">Carpenter (furniture)</option>
+                        <option value="">Carpenter (roof)</option>
+                        <option value="">Carpenter (general)</option>
+                        <option value="">Plumber</option>
+                        <option value="">Electrician</option>
+                        <option value="">Estate Shuttle</option>
+                        <option value="">Generator Repairer</option>
+                        <option value="">Vehicle Mechanic</option>
+                        <option value="">Battery Charger</option>
+                        <option value="">House AC Repairer</option>
+                        <option value="">Refrigerator Repairer</option>
+                        <option value="">Welder</option>
+                        <option value="">Fumigator</option>
+                        <option value="">Dry Cleaner (Pick Up/Home Service)</option>
+                        <option value="">Painter</option>
+                        <option value="">Bricklayer</option>
+                        <option value="">Gardner</option>
+                        <option value="">Dispatch Rider</option>
+                        <option value="">Others</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -129,7 +153,8 @@
         data-cf-beacon='{"rayId":"83555a0ac935b8a8","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
         crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
-    <script>
+    <!-- <script>
+        document.querySelector("#payer-info").classList.add("d-none");
         var verifyPayerId = document.querySelector("#exampleFormControlPayerId > input");
         verifyPayerId.addEventListener("blur", function () {
             if (verifyPayerId.value == "" | verifyPayerId.value.length < 1) {
@@ -141,7 +166,7 @@
                 document.querySelector("#payerid-error-message").classList.add("d-none");
             }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

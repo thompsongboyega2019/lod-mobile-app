@@ -32,8 +32,8 @@
             </div>
             <div class="header-div-logo mt-2 text-end">
                 <img src="img/logo.png" alt class="img-fluid blue-logo mb-3">
-                </div>
             </div>
+        </div>
         <div class="d-flex px-4 align-items-start justify-content-between mt-3">
             <div class="mb-4">
                 <h1 class="my-2 fw-900">A New User!</h1>
@@ -44,37 +44,39 @@
             <div class="row row-cols-4 g-2">
                 <div id="residents" class="col user-category">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
-                            <p class="text-truncate pt-2 m-0 fw-700">Residents</p>
+                        <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
+                        <p class="text-truncate pt-2 m-0 fw-700">Residents</p>
                     </div>
                 </div>
                 <div id="estateManager" class="col user-category">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
-                            <p class="text-truncate pt-2 m-0 fw-700">Estate Manager</p>
+                        <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
+                        <p class="text-truncate pt-2 m-0 fw-700">Estate Manager</p>
                     </div>
                 </div>
                 <div id="excos" class="col user-category">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
-                            <p class="text-truncate pt-2 m-0 fw-700">EXCOs</p>
+                        <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
+                        <p class="text-truncate pt-2 m-0 fw-700">EXCOs</p>
                     </div>
                 </div>
-                
+
                 <div id="artisanSecurity" class="col user-category">
                     <div class="bg-white text-center rounded-4 p-2 shadow-sm">
-                            <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
-                            <p class="text-truncate pt-2 m-0 fw-700">Artisan/Security</p>
+                        <img src="img/icon.png" alt="" class="img-fluid px-2 img-80">
+                        <p class="text-truncate pt-2 m-0 fw-700">Artisan/Security</p>
                     </div>
                 </div>
-               
+
             </div>
-            <p id="scrollText" class="fs-16 mb-1 mt-4 animate__animated animate__pulse animate__infinite">Scroll down to see other fields <span class="mdi mdi-arrow-down"></span></p>
+            <p id="scrollText" class="fs-16 mb-1 mt-4 animate__animated animate__pulse animate__infinite">Scroll down to
+                see other fields <span class="mdi mdi-arrow-down"></span></p>
         </div>
         <form id="registerationForm" class="px-4" action="login.html" method="">
             <div class="mb-3 landlordOrTenant">
                 <label for="chooseState" class="form-label mb-1 fs-16 fw-bold">Account Type</label>
-                <select id="account-type" class="form-control form-select form-select-lg py-1 fs-6" name="" onchange="chooseAccountType()">
+                <select id="account-type" class="form-control form-select form-select-lg py-1 fs-6" name=""
+                    onchange="chooseAccountType()">
                     <option value="">-- Choose account type --</option>
                     <option value="">Main Account</option>
                     <option value="">Linked Account</option>
@@ -83,18 +85,20 @@
 
             <!-- Hoh Id Fields Start -->
             <div id="hoh-id-field" class="mb-3">
-                <label for="exampleFormControlHohId" class="form-label mb-1 fs-16 fw-bold">Enter Head Of House ID</label>
+                <label for="exampleFormControlHohId" class="form-label mb-1 fs-16 fw-bold">Enter Head Of House
+                    ID</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlHohId">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="hohId">
                         <span class="mdi mdi-identifier mdi-18px text-muted"></span>
                     </span>
-                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
-                        aria-label="Hod Id" aria-describedby="hohId" value="">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0" aria-label="Hod Id"
+                        aria-describedby="hohId" value="">
                 </div>
                 <p id="id-error-message" class="fs-13 mb-1 text-secondary"></p>
 
 
-                <div id="hoh-info" class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3">
+                <div id="hoh-info"
+                    class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3 animate__animated animate__fadeIn">
                     <h6 class="pb-2">Head Of House Info</h6>
                     <div class="d-flex">
                         <div class="col">
@@ -125,7 +129,8 @@
                             <p><span class="text-muted small">Estate</span><br>Crowns Estate</p>
                         </div>
                         <div class="col">
-                            <p><span class="text-muted small">Residential Address</span><br>Flat 5 - House 10,Ogudu Road</p>
+                            <p><span class="text-muted small">Residential Address</span><br>Flat 5 - House 10,Ogudu Road
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -139,13 +144,14 @@
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="userId">
                         <span class="mdi mdi-identifier mdi-18px text-muted"></span>
                     </span>
-                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
-                        aria-label="User Id" aria-describedby="userId" value="">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0" aria-label="User Id"
+                        aria-describedby="userId" value="">
                 </div>
                 <p id="userId-error-message" class="fs-13 mb-1 text-secondary"></p>
 
 
-                <div id="user-info" class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3">
+                <div id="user-info"
+                    class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3 animate__animated animate__fadeIn">
                     <h6 class="pb-2">My Profile</h6>
                     <div class="d-flex">
                         <div class="col">
@@ -176,7 +182,8 @@
                             <p><span class="text-muted small">Estate</span><br>Crowns Estate</p>
                         </div>
                         <div class="col">
-                            <p><span class="text-muted small">Residential Address</span><br>Flat 5 - House 10,Ogudu Road</p>
+                            <p><span class="text-muted small">Residential Address</span><br>Flat 5 - House 10,Ogudu Road
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -199,8 +206,8 @@
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="fullname">
                         <span class="mdi mdi-account mdi-18px text-muted"></span>
                     </span>
-                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0" placeholder="Full Name"
-                        aria-label="Full Name" aria-describedby="fullname" value="">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
+                        placeholder="Full Name" aria-label="Full Name" aria-describedby="fullname" value="">
                 </div>
             </div>
             <div class="mb-3 general-fields">
@@ -208,8 +215,8 @@
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlDob">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="dob">
                         <span class="mdi mdi-lock-outline mdi-18px text-muted"></span></span>
-                    <input type="date" class="form-control bg-transparent rounded-0 border-0 px-0"
-                        placeholder="" aria-label="Dob" aria-describedby="dob" value="">
+                    <input type="date" class="form-control bg-transparent rounded-0 border-0 px-0" placeholder=""
+                        aria-label="Dob" aria-describedby="dob" value="">
                 </div>
             </div>
             <div class="mb-3 general-fields">
@@ -218,11 +225,12 @@
                     <label class="input-group-text bg-transparent rounded-0 border-0" for="gender">
                         <span class="mdi mdi-account-group-outline mdi-18px text-muted"></span>
                     </label>
-                <select class="form-control form-select form-select-lg py-1 fs-6 rounded-0 border-0" name="" id="gender">
-                    <option value="">-- Choose gender --</option>
-                    <option value="">Male</option>
-                    <option value="">Female</option>
-                </select>
+                    <select class="form-control form-select form-select-lg py-1 fs-6 rounded-0 border-0" name=""
+                        id="gender">
+                        <option value="">-- Choose gender --</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
                 </div>
             </div>
             <div class="mb-3 general-fields">
@@ -231,10 +239,10 @@
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="phoneNumber">
                         <span class="mdi mdi-cellphone mdi-18px text-muted"></span>
                     </span>
-                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0" placeholder="Phone Number"
-                        aria-label="Phone Number" aria-describedby="phonenumber" value="">
+                    <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
+                        placeholder="Phone Number" aria-label="Phone Number" aria-describedby="phonenumber" value="">
                 </div>
-            </div> 
+            </div>
             <div class="mb-3 general-fields">
                 <label for="exampleFormControlEmail" class="form-label mb-1 fs-16 fw-bold">Email</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlEmail">
@@ -255,7 +263,8 @@
                 </div>
             </div>
             <div class="mb-3 general-fields">
-                <label for="exampleFormControlConfirmPassword" class="form-label mb-1 fs-16 fw-bold">Confirm Password</label>
+                <label for="exampleFormControlConfirmPassword" class="form-label mb-1 fs-16 fw-bold">Confirm
+                    Password</label>
                 <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlConfirmPassword">
                     <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
                         <span class="mdi mdi-lock-outline mdi-18px text-muted"></span></span>
@@ -263,7 +272,7 @@
                         placeholder="Confirm password" aria-label="Password" aria-describedby="password" value="">
                 </div>
             </div>
-            
+
             <!-- General Fields End -->
 
             <!-- Landlord/Tenant Fields Start -->
@@ -312,12 +321,14 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlStreetAddress" class="form-label mb-1 fs-16 fw-bold">Street Address</label>
+                    <label for="exampleFormControlStreetAddress" class="form-label mb-1 fs-16 fw-bold">Street
+                        Address</label>
                     <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlStreetAddress">
                         <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
                             <span class="mdi mdi-map-marker mdi-18px text-muted"></span></span>
                         <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
-                            placeholder="Street Address" aria-label="streetAddress" aria-describedby="streetAddress" value="">
+                            placeholder="Street Address" aria-label="streetAddress" aria-describedby="streetAddress"
+                            value="">
                     </div>
                 </div>
             </div>
@@ -352,16 +363,20 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlPersonalOrCompanyAddress" class="form-label mb-1 fs-16 fw-bold">Company/Personal Address</label>
-                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPersonalOrCompanyAddress">
+                    <label for="exampleFormControlPersonalOrCompanyAddress"
+                        class="form-label mb-1 fs-16 fw-bold">Company/Personal Address</label>
+                    <div class="input-group border bg-white rounded-3 py-1"
+                        id="exampleFormControlPersonalOrCompanyAddress">
                         <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
                             <span class="mdi mdi-map-marker mdi-18px text-muted"></span></span>
                         <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0"
-                            placeholder="Personal/Company Address" aria-label="personalOrCompanyAddress" aria-describedby="personalOrCompanyAddress" value="">
+                            placeholder="Personal/Company Address" aria-label="personalOrCompanyAddress"
+                            aria-describedby="personalOrCompanyAddress" value="">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlProfession" class="form-label mb-1 fs-16 fw-bold">Profession/Role</label>
+                    <label for="exampleFormControlProfession"
+                        class="form-label mb-1 fs-16 fw-bold">Profession/Role</label>
                     <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlProfession">
                         <span class="input-group-text bg-transparent rounded-0 border-0" id="password">
                             <span class="mdi mdi-account mdi-18px text-muted"></span></span>
@@ -372,12 +387,12 @@
             </div>
             <!-- Artisan/Security Fields End -->
 
-                <button type="submit" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-3">Register</button>
-                <div class="mt-2 text-center">
-                    <p class="fs-16">Already have an account? <a class="text-muted" href="login.html">Sign In</a></p>
-                </div>
+            <button type="submit" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-3">Register</button>
+            <div class="mt-2 text-center">
+                <p class="fs-16">Already have an account? <a class="text-muted" href="login.html">Sign In</a></p>
             </div>
-        </form>
+    </div>
+    </form>
 
     </div>
 
@@ -402,8 +417,167 @@
         integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
         data-cf-beacon='{"rayId":"83555a787904b8a8","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
         crossorigin="anonymous"></script>
-   <!-- Custom JavaScript -->
-   <script src="js/custom.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
+    <script>
+        // Sign up category registration field starts
+        function selectSignUp() {
+            var a = document.getElementById("registerationForm");
+            a.classList.add("d-none");
+            var residents = document.getElementById("residents");
+            var estateManager = document.getElementById("estateManager");
+            var excos = document.getElementById("excos");
+            var artisanSecurity = document.getElementById("artisanSecurity");
+            var hohField = document.getElementById("hoh-id-field");
+            hohField.classList.add("d-none");
+            var scrollText = document.getElementById("scrollText");
+            scrollText.classList.add("d-none");
+            let generalFields = document.getElementsByClassName("general-fields");
+
+            residents.addEventListener("click", function () {
+                residents.getElementsByClassName("bg-white")[0].classList.add("category-active", "shadow-lg");
+                a.classList.remove("d-none");
+                let showResidents = document.getElementsByClassName("landlordOrTenant");
+                showResidents[0].classList.remove("d-none");
+                showResidents[1].classList.add("d-none");
+                for (const x of generalFields) {
+                    x.classList.add("d-none");
+                }
+                artisanSecurity.getElementsByClassName("bg-white")[0].classList.remove("category-active",
+                    "shadow-lg");
+                excos.getElementsByClassName("bg-white")[0].classList.remove("category-active", "shadow-lg");
+                let hideArtisanSecurity = document.getElementsByClassName("artisanOrSecurity");
+                hideArtisanSecurity[0].classList.add("d-none");
+                let hideExcos = document.getElementsByClassName("excos");
+                hideExcos[0].classList.add("d-none");
+                scrollText.classList.remove("d-none");
+            });
+            artisanSecurity.addEventListener("click", function () {
+                artisanSecurity.getElementsByClassName("bg-white")[0].classList.add("category-active",
+                    "shadow-lg");
+                a.classList.remove("d-none");
+                let showArtisanSecurity = document.getElementsByClassName("artisanOrSecurity");
+                showArtisanSecurity[0].classList.remove("d-none");
+                let hideResidents = document.getElementsByClassName("landlordOrTenant");
+                for (const x of hideResidents) {
+                    x.classList.add("d-none");
+                }
+                let hideExcos = document.getElementsByClassName("excos");
+                hideExcos[0].classList.add("d-none");
+                for (const x of generalFields) {
+                    x.classList.remove("d-none");
+                }
+                residents.getElementsByClassName("bg-white")[0].classList.remove("category-active",
+                "shadow-lg");
+                excos.getElementsByClassName("bg-white")[0].classList.remove("category-active", "shadow-lg");
+                scrollText.classList.remove("d-none");
+                hohField.classList.add("d-none");
+            });
+            excos.addEventListener("click", function () {
+                excos.getElementsByClassName("bg-white")[0].classList.add("category-active", "shadow-lg");
+                a.classList.remove("d-none");
+                let hideResidents = document.getElementsByClassName("landlordOrTenant");
+                for (const x of hideResidents) {
+                    x.classList.add("d-none");
+                }
+                let hideArtisanSecurity = document.getElementsByClassName("artisanOrSecurity");
+                hideArtisanSecurity[0].classList.add("d-none");
+                for (const x of generalFields) {
+                    x.classList.add("d-none");
+                }
+                let hideExcos = document.getElementsByClassName("excos");
+                hideExcos[0].classList.remove("d-none");
+                residents.getElementsByClassName("bg-white")[0].classList.remove("category-active",
+                "shadow-lg");
+                artisanSecurity.getElementsByClassName("bg-white")[0].classList.remove("category-active",
+                    "shadow-lg");
+                scrollText.classList.add("d-none");
+                hohField.classList.add("d-none");
+            })
+
+        };
+        selectSignUp();
+        // Sign up category registration field ends
+
+
+        // Account type option controller starts 
+        function chooseAccountType() {
+            let generalFields = document.getElementsByClassName("general-fields");
+            let showResidents = document.getElementsByClassName("landlordOrTenant");
+            var hohField = document.getElementById("hoh-id-field");
+            let a = document.getElementById("account-type");
+            switch (a.selectedIndex) {
+                case 1:
+                    for (const x of generalFields) {
+                        x.classList.remove("d-none");
+                    };
+                    hohField.classList.add("d-none");
+                    showResidents[1].classList.remove("d-none");
+                    break;
+                case 2:
+                    for (const x of generalFields) {
+                        x.classList.remove("d-none");
+                    };
+                    hohField.classList.remove("d-none");
+                    showResidents[1].classList.add("d-none");
+                    break;
+                case 0:
+                    for (const x of generalFields) {
+                        x.classList.add("d-none");
+                    };
+                    hohField.classList.add("d-none");
+                    showResidents[1].classList.add("d-none");
+                    break;
+            };
+        };
+        // Account type option controller ends 
+
+
+        // Register Screen - Head Of House info controller & HOH Id validation start
+        function displayHohInfo() {
+            var hohInfo = document.querySelector("#hoh-info");
+            hohInfo.classList.add("d-none");
+        };
+        displayHohInfo();
+
+        var verifyHohId = document.querySelector("#hohId + input");
+        verifyHohId.addEventListener("blur", showInfo);
+        // verifyHohId.addEventListener("focus", showInfoTwo);
+
+        function showInfo() {
+            if (verifyHohId.value == "" || verifyHohId.value.length < 1) {
+                document.querySelector("#id-error-message").innerHTML =
+                    "<b><i>Please provide your Head Of House Id</i></b>";
+                document.querySelector("#hoh-info").classList.add("d-none");
+                return false;
+            } else {
+                document.querySelector("#hoh-info").classList.remove("d-none");
+                document.querySelector("#id-error-message").classList.add("d-none");
+            }
+        };
+        // Register Screen - Head Of House info controller & HOH Id validation end
+
+
+        // Register Screen - User Information controller & User Id Validation start
+        function displayUserInfo() {
+            let userInfo = document.querySelector("#user-info");
+            userInfo.classList.add("d-none");
+        };
+        displayUserInfo();
+
+        var verifyUserId = document.querySelector("#userId + input");
+        verifyUserId.addEventListener("blur", function () {
+            if (verifyUserId.value == "" || verifyUserId.value.length < 1) {
+                document.querySelector("#userId-error-message").innerHTML =
+                    "<b><i>Please provide your Id</i></b>";
+                document.querySelector("#user-info").classList.add("d-none");
+            } else {
+                document.querySelector("#user-info").classList.remove("d-none");
+                document.querySelector("#userId-error-message").classList.add("d-none");
+            }
+        });
+        // Register Screen - User Information controller & User Id Validation End
+    </script>
 </body>
 
 </html>
