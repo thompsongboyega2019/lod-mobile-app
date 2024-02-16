@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <title>LOD Realtors - Service Request</title>
+    <title>LOD Realtors - Report Issue Detail</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -31,13 +31,13 @@
                     <a href="javascript:history.back()" class="text-dark bg-white shadow rounded-circle icon">
                         <span class="mdi mdi-arrow-left mdi-18px text-secondary"></span></a>
                         <div class="ps-1">
-                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">Service Request</p>
+                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">Report Issue Overview</p>
                         </div>
 
                 </div>
                 <div class="d-flex align-items-center gap-2">
 
-                    <a href="service-request-list.html" ><p class="mb-0 text-muted fs-14">History</p>
+                    <a href="#" ><p class="mb-0 text-muted fs-14">History</p>
                     </a>
 
                 </div>
@@ -45,11 +45,10 @@
         </div>
 
         <div class="vh-100 my-auto overflow-auto px-3 pt-4 mt-60">
-            <form action="service-request-overview.html">
-               <p id="payerid-error-message" class="fs-13 mb-1 text-secondary"></p>
-                <div id="payer-info"
-                    class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3 animate__animated animate__fadeIn">
-                    <h6 class="pb-2">Resident Information</h6>
+            <form action="checkout.html">
+                <div id=""
+                    class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3">
+                    <h6 class="pb-2">Report Preview</h6>
                     <div class="d-flex">
                         <div class="col">
                             <p><span class="text-muted small">Full Name</span><br>Busayo Shokunbi</p>
@@ -82,51 +81,32 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="selectPriority" class="form-label mb-1 fs-16 fw-bold">Priority</label>
-                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectPriority">
-                        <option value="">-- Select priority --</option>
-                        <option value="">Urgent</option>
-                        <option value="">Anytime</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="selectService" class="form-label mb-1 fs-16 fw-bold">Services</label>
-                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectService">
-                        <option value="">-- Select service --</option>
-                        <option value="">Carpenter (furniture)</option>
-                        <option value="">Carpenter (roof)</option>
-                        <option value="">Carpenter (general)</option>
-                        <option value="">Plumber</option>
-                        <option value="">Electrician</option>
-                        <option value="">Estate Shuttle</option>
-                        <option value="">Generator Repairer</option>
-                        <option value="">Vehicle Mechanic</option>
-                        <option value="">Battery Charger</option>
-                        <option value="">House AC Repairer</option>
-                        <option value="">Refrigerator Repairer</option>
-                        <option value="">Welder</option>
-                        <option value="">Fumigator</option>
-                        <option value="">Dry Cleaner (Pick Up/Home Service)</option>
-                        <option value="">Painter</option>
-                        <option value="">Bricklayer</option>
-                        <option value="">Gardner</option>
-                        <option value="">Dispatch Rider</option>
-                        <option value="">Others</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormBillAmount" class="form-label mb-1 fs-16 fw-bold">Description Of Service</label>
-                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormBillAmount">
-                        <textarea name="" id="" class="form-control bg-transparent rounded-0 border-0 py-1" cols="30" rows="5"></textarea>
-                        
+                    <h6 class="border-top pt-3 mb-4">
+                        <div class="fw-normal text-muted">Issue Type</div>
+                        <div class="fw-bold mt-2">Maintenance & Repairs</div>
+                    </h6>
+                    <div class="border-top pt-3 mb-4">
+                        <div class="fw-bold mt-2 mb-2 text-muted fs-16">A Leak In The Bathtub</div>
+                        <p><span class="">Hello, Admin. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span></p>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-4">Proceed</button>
+                
+                <button type="button" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-4" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Submit Complaint</button>
             </form>
         </div>
-
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel"
+        style="height:50vh;">
+        <div class="offcanvas-body text-center d-flex align-items-center justify-content-center">
+            <div>
+                <i class="bi bi-check-circle text-primary display-1 text-muted"></i>
+                <h5 class="py-3">Complaint Submitted!<br>Kindly check your email for response.</h5>
+            </div>
+        </div>
+        <div class="offcanvas-footer">
+            <a href="dashboard.html" class="btn btn-info btn-lg w-100 rounded-4">Done</a>
+        </div>
+    </div>
 
     </div>
 
@@ -146,20 +126,6 @@
         data-cf-beacon='{"rayId":"83555a0ac935b8a8","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
         crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
-    <!-- <script>
-        document.querySelector("#payer-info").classList.add("d-none");
-        var verifyPayerId = document.querySelector("#exampleFormControlPayerId > input");
-        verifyPayerId.addEventListener("blur", function () {
-            if (verifyPayerId.value == "" | verifyPayerId.value.length < 1) {
-                document.querySelector("#payerid-error-message").innerHTML =
-                    "<b><i>Please provide your Id</i></b>";
-                document.querySelector("#payer-info").classList.add("d-none");
-            } else {
-                document.querySelector("#payer-info").classList.remove("d-none");
-                document.querySelector("#payerid-error-message").classList.add("d-none");
-            }
-        });
-    </script> -->
 </body>
 
 </html>

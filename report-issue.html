@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <title>LOD Realtors - Service Request</title>
+    <title>LOD Realtors - Report Issue</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -31,13 +31,13 @@
                     <a href="javascript:history.back()" class="text-dark bg-white shadow rounded-circle icon">
                         <span class="mdi mdi-arrow-left mdi-18px text-secondary"></span></a>
                         <div class="ps-1">
-                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">Service Request</p>
+                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">Report Issue</p>
                         </div>
 
                 </div>
                 <div class="d-flex align-items-center gap-2">
 
-                    <a href="service-request-list.html" ><p class="mb-0 text-muted fs-14">History</p>
+                    <a href="#" ><p class="mb-0 text-muted fs-14">History</p>
                     </a>
 
                 </div>
@@ -45,8 +45,15 @@
         </div>
 
         <div class="vh-100 my-auto overflow-auto px-3 pt-4 mt-60">
-            <form action="service-request-overview.html">
-               <p id="payerid-error-message" class="fs-13 mb-1 text-secondary"></p>
+            <form action="report-issue-detail.html">
+                <!-- <div class="mb-3">
+                    <label for="exampleFormControlPayerId" class="form-label mb-1 fw-bold">User ID</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPayerId">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="Payer Id" aria-describedby="payerId">
+                    </div>
+                </div> -->
+                <p id="payerid-error-message" class="fs-13 mb-1 text-secondary"></p>
                 <div id="payer-info"
                     class="bg-white rounded-4 px-3 pt-3 overflow-hidden edit-profile-back shadow mb-3 mt-3 animate__animated animate__fadeIn">
                     <h6 class="pb-2">Resident Information</h6>
@@ -84,45 +91,36 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="selectPriority" class="form-label mb-1 fs-16 fw-bold">Priority</label>
-                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectPriority">
-                        <option value="">-- Select priority --</option>
-                        <option value="">Urgent</option>
-                        <option value="">Anytime</option>
+                    <label for="selectIssueType" class="form-label mb-1 fs-16 fw-bold">Issue Type</label>
+                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectIssueType">
+                        <option value="">-- Select Issue Type --</option>
+                        <option value="">Maintenance & Repairs</option>
+                        <option value="">Bills & Utilities Issue</option>
+                        <option value="">Security Issue</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="selectService" class="form-label mb-1 fs-16 fw-bold">Services</label>
-                    <select class="form-control form-select form-select-lg py-1 fs-6" name="" id="selectService">
-                        <option value="">-- Select service --</option>
-                        <option value="">Carpenter (furniture)</option>
-                        <option value="">Carpenter (roof)</option>
-                        <option value="">Carpenter (general)</option>
-                        <option value="">Plumber</option>
-                        <option value="">Electrician</option>
-                        <option value="">Estate Shuttle</option>
-                        <option value="">Generator Repairer</option>
-                        <option value="">Vehicle Mechanic</option>
-                        <option value="">Battery Charger</option>
-                        <option value="">House AC Repairer</option>
-                        <option value="">Refrigerator Repairer</option>
-                        <option value="">Welder</option>
-                        <option value="">Fumigator</option>
-                        <option value="">Dry Cleaner (Pick Up/Home Service)</option>
-                        <option value="">Painter</option>
-                        <option value="">Bricklayer</option>
-                        <option value="">Gardner</option>
-                        <option value="">Dispatch Rider</option>
-                        <option value="">Others</option>
-                    </select>
+                    <label for="exampleFormControlIssueSubject" class="form-label mb-1 fs-16 fw-bold">Subject</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlIssueSubject">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="Issue Subject" aria-describedby="issueSubject">
+                    </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormBillAmount" class="form-label mb-1 fs-16 fw-bold">Description Of Service</label>
+                    <label for="exampleFormBillAmount" class="form-label mb-1 fs-16 fw-bold">Description Of Issue</label>
                     <div class="input-group border bg-white rounded-3 py-1" id="exampleFormBillAmount">
                         <textarea name="" id="" class="form-control bg-transparent rounded-0 border-0 py-1" cols="30" rows="5"></textarea>
                         
                     </div>
                 </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlUploadFile" class="form-label mb-1 fs-16 fw-bold">Upload File (Optional)</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlUploadFile">
+                        <input type="file" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="Upload File" aria-describedby="uploadFile" multiple>
+                    </div>
+                </div>
+                
                 <button type="submit" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-4">Proceed</button>
             </form>
         </div>
@@ -146,20 +144,6 @@
         data-cf-beacon='{"rayId":"83555a0ac935b8a8","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
         crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
-    <!-- <script>
-        document.querySelector("#payer-info").classList.add("d-none");
-        var verifyPayerId = document.querySelector("#exampleFormControlPayerId > input");
-        verifyPayerId.addEventListener("blur", function () {
-            if (verifyPayerId.value == "" | verifyPayerId.value.length < 1) {
-                document.querySelector("#payerid-error-message").innerHTML =
-                    "<b><i>Please provide your Id</i></b>";
-                document.querySelector("#payer-info").classList.add("d-none");
-            } else {
-                document.querySelector("#payer-info").classList.remove("d-none");
-                document.querySelector("#payerid-error-message").classList.add("d-none");
-            }
-        });
-    </script> -->
 </body>
 
 </html>
