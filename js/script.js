@@ -63,16 +63,16 @@ $(document).keydown(function (e) {
         nextArrow: false,
         prewArrow: false,
     });
-    $('.top-doctors').slick({
-        infinite: false,
+    $('.applicants').slick({
+        infinite: true,
         dots: false,
         arrows: false,
         speed: 300,
         autoplay: false,
-        slidesToShow: 2.2,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
     });
-    $('.available-doctor').slick({
+    $('.main-slides').slick({
         infinite: true,
         dots: false,
         arrows: false,

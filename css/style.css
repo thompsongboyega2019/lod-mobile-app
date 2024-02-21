@@ -760,6 +760,12 @@ span.text-primary {
 .fs-16 {
     font-size: 16px;
 }
+.fs-11 {
+    font-size: 11px !important;
+}
+.fs-12 {
+    font-size: 12px !important;
+}
 .fs-13 {
     font-size: 13px !important;
 }
@@ -835,5 +841,14 @@ span.text-primary {
 }
 .mt-60 {
     margin-top: 60px !important;
+}
+.mt-50 {
+    margin-top: 50px !important;
+}
+.mt-40 {
+    margin-top: 40px !important;
+}
+.mt-30 {
+    margin-top: 30px !important;
 }
 /*Custom CSS Ends*/
