@@ -859,4 +859,7 @@ span.text-primary {
     background-color: var(--primary);
     color: var(--white);
 }
+.view-all-votes > a {
+    color: var(--primary);
+}
 /*Custom CSS Ends*/
