@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <title>LOD Realtors - All Applicants</title>
+    <title>LOD Realtors - Applicant Details</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -31,7 +31,7 @@
                     <a href="javascript:history.back()" class="text-dark bg-white shadow rounded-circle icon">
                         <span class="mdi mdi-arrow-left mdi-18px text-secondary"></span></a>
                         <div class="ps-1">
-                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">All Applicants</p>
+                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">Applicant Details</p>
                         </div>
 
                 </div>
@@ -41,8 +41,8 @@
         <div class="vh-100 my-auto overflow-auto px-3 pt-4 mt-60">
             <div class="mb-4 container">
                 <div class="top-doctors all-applicants row">
-                    <div class="top-doctor-item col-6 mx-0 mb-3">
-                        <a href="applicant-detail.html" class="link-dark">
+                    <div class="top-doctor-item col-12 mx-0 mb-3">
+                        <a href="#" class="link-dark">
                             <div class="card bg-white border-0 rounded-4 shadow-sm overflow-hidden">
                                 <img src="img/applicants/one.jpg" class="card-img-top top-doctor-img" alt="...">
                                 <div class="card-body small p-3 osahan-card-body">
@@ -52,55 +52,40 @@
                             </div>
                         </a>
                     </div>
-                    <div class="top-doctor-item col-6 mx-0 mb-3">
-                        <a href="applicant-detail.html" class="link-dark">
-                            <div class="card bg-white border-0 rounded-4 shadow-sm overflow-hidden">
-                                <img src="img/applicants/two.jpg" class="card-img-top top-doctor-img" alt="...">
-                                <div class="card-body small p-3 osahan-card-body">
-                                    <p class="card-title fw-semibold mb-0 text-truncate fs-14">Mr Adegoke Ifeanyi</p>
-                                    <p class="card-text text-muted small m-0 fs-14 vote-count"><span class="fw-bolder">100</span> votes</p>
-                                </div>
+                    <div class="col-12 mx-0 mb-3">
+                        <div class="body">
+            
+                            <div class="mb-4">
+                                <h6>About</h6>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut quidem
+                                    laudantium ipsum deserunt atque, architecto doloribus fugiat iure, voluptatem quo voluptates
+                                    provident
+                                    numquam necessitatibus amet. Et nesciunt eum maiores!
+                                </p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="top-doctor-item col-6 mx-0 mb-3">
-                        <a href="applicant-detail.html" class="link-dark">
-                            <div class="card bg-white border-0 rounded-4 shadow-sm overflow-hidden">
-                                <img src="img/applicants/three.jpg" class="card-img-top top-doctor-img" alt="...">
-                                <div class="card-body small p-3 osahan-card-body">
-                                    <p class="card-title fw-semibold mb-0 text-truncate fs-14">Mrs Ekene Cynthia</p>
-                                    <p class="card-text text-muted small m-0 fs-14 vote-count"><span class="fw-bolder">10</span> votes</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="top-doctor-item col-6 mx-0 mb-3">
-                        <a href="applicant-detail.html" class="link-dark">
-                            <div class="card bg-white border-0 rounded-4 shadow-sm overflow-hidden">
-                                <img src="img/applicants/one.jpg" class="card-img-top top-doctor-img" alt="...">
-                                <div class="card-body small p-3 osahan-card-body">
-                                    <p class="card-title fw-semibold mb-0 text-truncate fs-14">Mr Chinedu Oluwasegun</p>
-                                    <p class="card-text text-muted small m-0 fs-14 vote-count"><span class="fw-bolder">1</span> votes</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="top-doctor-item col-6 mx-0 mb-3">
-                        <a href="applicant-detail.html" class="link-dark">
-                            <div class="card bg-white border-0 rounded-4 shadow-sm overflow-hidden">
-                                <img src="img/applicants/three.jpg" class="card-img-top top-doctor-img" alt="...">
-                                <div class="card-body small p-3 osahan-card-body">
-                                    <p class="card-title fw-semibold mb-0 text-truncate fs-14">Mrs Aderemi Adeola</p>
-                                    <p class="card-text text-muted small m-0 fs-14 vote-count"><span class="fw-bolder">0</span> votes</p>
-                                </div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                     
                 </div>
             </div>
            
         </div>
+        <div class="footer osahan-footer mt-auto p-3">
+            <button type="button" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-4" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Vote</button>
+        </div>
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel"
+        style="height:50vh;">
+        <div class="offcanvas-body text-center d-flex align-items-center justify-content-center">
+            <div>
+                <i class="bi bi-check-circle text-primary display-1 text-muted"></i>
+                <h5 class="py-3">Thank You!<br>Vote Casted Successfully</h5>
+            </div>
+        </div>
+        <div class="offcanvas-footer">
+            <a href="available-positions.html" class="btn btn-info btn-lg w-100 rounded-4">Vote Again</a>
+        </div>
+    </div>
     </div>
 
     <nav id="main-nav">
