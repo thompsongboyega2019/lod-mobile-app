@@ -851,4 +851,8 @@ span.text-primary {
 .mt-30 {
     margin-top: 30px !important;
 }
+.top-doctors.all-applicants {
+    opacity: 1;
+    visibility: visible;
+}
 /*Custom CSS Ends*/
