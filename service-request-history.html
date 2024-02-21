@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <title>LOD Realtors - Bills & Utilities</title>
+    <title>LOD Realtors - Service Request</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -28,46 +28,66 @@
         <div class="bg-white shadow-sm app-header">
             <div class="d-flex align-items-center justify-content-between mb-auto p-3 osahan-header">
                 <div class="d-flex align-items-center gap-2 me-auto">
+                    <a href="javascript:history.back()" class="text-dark bg-white shadow rounded-circle icon">
+                        <span class="mdi mdi-arrow-left mdi-18px text-secondary"></span></a>
+                        <div class="ps-1">
+                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">History</p>
+                        </div>
+
+                </div>
+                <div class="d-flex align-items-center gap-2">
+
                     <a class="toggle bg-white shadow rounded-circle icon d-flex align-items-center justify-content-center"
                         href="#"><i class="bi bi-list text-primary fs-5 d-flex"></i></a>
-                        <div class="ps-1">
-                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">Bills & Utilities</p>
-                        </div>
 
                 </div>
             </div>
         </div>
 
-        <div class="vh-100 my-auto overflow-auto px-3 pt-4 mt-60">
-            <div class="p-3 px-0">
-                <div class="">
-                    <a href="pay-community-bills.html" class="link-dark d-block mb-3">
-                        <div class="bg-white d-flex align-items-center p-3 border-bottom gap-3">
-                            <span class="mdi mdi-file-document-outline mdi-24px icon shadow rounded-pill bg-info-subtle text-info"></span>
-                            <h6 class="m-0 fs-15">Pay Community Bills</h6>
-                            
-                        </div>
-                    </a>
-                    <a href="purchase-utilities.html" class="link-dark d-block mb-3">
-                        <div class="bg-white d-flex align-items-center p-3 border-bottom gap-3">
-                            <span class="mdi mdi-lightbulb-on-10 mdi-24px icon shadow rounded-pill light-bg-orange text-orange"></span>
-                            <h6 class="m-0 fs-15">Purchase Utilities</h6>
-                            
-                        </div>
-                    </a>
-                    <a href="#" class="link-dark d-block mb-3">
-                        <div class="bg-white d-flex align-items-center p-3 border-bottom gap-3">
-                            <span class="mdi mdi-text-box-outline mdi-24px icon shadow rounded-pill bg-success-subtle text-success"></span>
-                            <h6 class="m-0 fs-15">Get Account Statement</h6>
-                            
-                        </div>
-                    </a>
+        <div class="vh-100 my-auto overflow-auto body-fix-osahan-footer mt-30">
+            <div>
+                <div class="d-flex gap-3 bg-white border-bottom p-3">
+                    <div>
+                        <span class="bg-success-subtle rounded-pill notification-icon">
+                            <span class="mdi mdi-check-circle text-success"></span>
+                        </span>
+                    </div>
+                    <div>
+                        <p class="mb-2">Plumber <a href="service-request-detail.html">View</a></p>
+                        <span class="text-primary fs-12">20th January, 2024</span>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 bg-white border-bottom p-3">
+                    <div>
+                        <span class="light-bg-orange rounded-pill notification-icon">
+                            <span class="mdi mdi-cancel text-orange"></span>
+                        </span>
+                    </div>
+                    <div>
+                        <p class="mb-2">Maintenance & Repair Complaint <a
+                                href="service-request-detail.html">View</a></p>
+                        <span class="text-primary fs-12">1st February, 2024</span>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 bg-white border-bottom p-3">
+                    <div>
+                        <span class="light-bg-warning rounded-pill notification-icon">
+                            <span class="mdi mdi-information text-warning"></span>
+                        </span>
+                    </div>
+                    <div>
+                        <p class="mb-2">Maintenance & Repair Complaint <a
+                            href="service-request-detail.html">View</a></p>
+                    <span class="text-primary fs-12">1st February, 2024</span>
+                    </div>
                 </div>
             </div>
-           
         </div>
+
+
     </div>
-
     <nav id="main-nav">
         <ul class="second-nav">
             <li class="osahan-user-profile bg-primary">
@@ -83,7 +103,7 @@
             <li>
                 <a href="utilities.html"><span class="mdi mdi-home-lightning-bolt-outline me-3"></span>Bills/Utilities</a>
             </li>
-            <li><a href="select-estate.html"><span class="mdi mdi-vote-outline me-3"></span>Voting</a></li>
+            <li><a href="#"><span class="mdi mdi-vote-outline me-3"></span>Voting</a></li>
             <li>
                 <a href="vehicle-list.html"><span class="mdi mdi-car-info me-3"></span>Vehicle Identification</a>
             </li>
@@ -138,6 +158,20 @@
         data-cf-beacon='{"rayId":"83555a0ac935b8a8","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
         crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
+    <!-- <script>
+        document.querySelector("#payer-info").classList.add("d-none");
+        var verifyPayerId = document.querySelector("#exampleFormControlPayerId > input");
+        verifyPayerId.addEventListener("blur", function () {
+            if (verifyPayerId.value == "" | verifyPayerId.value.length < 1) {
+                document.querySelector("#payerid-error-message").innerHTML =
+                    "<b><i>Please provide your Id</i></b>";
+                document.querySelector("#payer-info").classList.add("d-none");
+            } else {
+                document.querySelector("#payer-info").classList.remove("d-none");
+                document.querySelector("#payerid-error-message").classList.add("d-none");
+            }
+        });
+    </script> -->
 </body>
 
 </html>
