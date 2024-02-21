@@ -855,4 +855,8 @@ span.text-primary {
     opacity: 1;
     visibility: visible;
 }
+.applicants-title {
+    background-color: var(--primary);
+    color: var(--white);
+}
 /*Custom CSS Ends*/
