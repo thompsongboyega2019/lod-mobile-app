@@ -851,7 +851,7 @@ span.text-primary {
 .mt-30 {
     margin-top: 30px !important;
 }
-.top-doctors.all-applicants {
+.top-doctors.all-applicants, .top-doctors.news-detail {
     opacity: 1;
     visibility: visible;
 }
