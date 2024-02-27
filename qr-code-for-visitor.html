@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <title>LOD Realtors - News</title>
+    <title>LOD Realtors - Share QR Code</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -28,39 +28,32 @@
         <div class="bg-white shadow-sm app-header">
             <div class="d-flex align-items-center justify-content-between mb-auto p-3 osahan-header">
                 <div class="d-flex align-items-center gap-2 me-auto">
-                    <a class="toggle bg-white shadow rounded-circle icon d-flex align-items-center justify-content-center"
-                        href="#"><i class="bi bi-list text-primary fs-5 d-flex"></i></a>
-                        <div class="ps-1">
-                            <p class="fw-bold mb-0 text-primary fw-bold fs-14">Blog</p>
-                        </div>
+                    <a href="javascript:history.back()" class="text-dark bg-white shadow rounded-circle icon">
+                        <span class="mdi mdi-arrow-left mdi-18px text-secondary"></span></a>
+
+                </div>
+                <div class="d-flex align-items-center gap-2">
+
+                    <a href="#"><img src="img/profile/favorite-4.jpg" alt class="img-fluid rounded-circle icon"></a>
+                    <a href="#" class="bg-white shadow rounded-circle icon">
+                        <span class="mdi mdi-bell-outline mdi-18px text-primary"></span>
+                    </a>
 
                 </div>
             </div>
         </div>
 
         <div class="vh-100 my-auto overflow-auto px-3 pt-4 mt-60">
-            <div class="rounded-4 shadow overflow-hidden bg-white">
-                <a href="news-detail.html" class="link-dark">
-                    <div class="bg-white shadow-sm d-flex align-items-center gap-3 p-3 border-bottom">
-                        <img src="img/blog/money.jpg" alt class="img-fluid rounded-pill message-profile">
-                        <div>
-                            <h6 class="mb-1 fs-14">Naira drops to new all-time low at black market, trades at N1,730/$</h6>
-                            <p class="text-muted m-0 small">View</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="news-detail.html" class="link-dark">
-                    <div class="bg-white shadow-sm d-flex align-items-center gap-3 p-3 border-bottom">
-                        <img src="img/blog/nation-security.jpg" alt class="img-fluid rounded-pill message-profile">
-                        <div>
-                            <h6 class="mb-1 fs-14">National Security: House of Reps pledges to support army achieve  mandate</h6>
-                            <p class="text-muted m-0 small">View</p>
-                        </div>
-                    </div>
+            <div class="qr-code-div px-3 py-4 text-center">
+                <a id="qr-code" href="img/qrcode.png" download="My Vehicle QR Code">
+                    <img src="img/qrcode.png" alt="">
                 </a>
             </div>
-           
+            <p class="text-muted fs-15"><span class="fw-900">NOTE:</span> This <span class="fw-900">qr</span> code is a one-time code that can only be scanned once.</p>
+            <button id="share-qr-btn" type="submit" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-4">Share QR Code</button>
         </div>
+
+       
     </div>
 
     <nav id="main-nav">
@@ -73,31 +66,25 @@
             </li>
             <li><a href="dashboard.html"><span class="mdi mdi-home-variant-outline me-3"></span>Dashboard</a></li>
             <li>
-                <a href="profile.html"><span class="mdi mdi-account-details-outline me-3"></span>Profile & IDs</a>
+                <a href="#"><span class="mdi mdi-account-details-outline me-3"></span>Profile & IDs</a>
             </li>
             <li>
-                <a href="utilities.html"><span class="mdi mdi-home-lightning-bolt-outline me-3"></span>Bills/Utilities</a>
+                <a href="#"><span class="mdi mdi-home-lightning-bolt-outline me-3"></span>Bills/Utilities</a>
             </li>
-            <li><a href="available-positions.html"><span class="mdi mdi-vote-outline me-3"></span>Voting</a></li>
+            <li><a href="#"><span class="mdi mdi-vote-outline me-3"></span>Voting</a></li>
             <li>
-                <a href="vehicle-list.html"><span class="mdi mdi-car-info me-3"></span>Vehicle Identification</a>
+                <a href="#"><span class="mdi mdi-car-info me-3"></span>Vehicle Identification</a>
             </li>
             <li>
-                <a href="news.html"><span class="mdi mdi-message-badge-outline me-3"></span>Information Dissemination</a>
+                <a href="#"><span class="mdi mdi-message-badge-outline me-3"></span>Information Dissemination</a>
             </li>
             <li><a href="#"><span class="mdi mdi-account-multiple-check-outline me-3"></span>Visitor Control</a></li>
-            <li><a href="service-request.html"><span class="mdi mdi-gesture-tap-button me-3"></span>Service Request</a></li>
+            <li><a href="#"><span class="mdi mdi-gesture-tap-button me-3"></span>Service Request</a></li>
             
             
-            <li><a href="report-issue.html"><span class="mdi mdi-alert-outline me-3"></span>Complaint/Reporting</a></li>
+            <li><a href="#"><span class="mdi mdi-alert-outline me-3"></span>Complaint/Reporting</a></li>
             <li>
-                <a href="resident-fines.html"><span class="mdi mdi-cash-check me-3"></span>Resident Fine</a>
-            </li>
-            <li>
-                <a href="#"><span class="mdi mdi-scoreboard-outline me-3"></span>Performance Evaluation Score Card</a>
-            </li>
-            <li>
-                <a href="#"><span class="mdi mdi-monitor-account me-3"></span>LOD Monitor</a>
+                <a href="#"><span class="mdi mdi-cash-check me-3"></span>Resident Fine</a>
             </li>
             
         </ul>
@@ -139,6 +126,16 @@
         data-cf-beacon='{"rayId":"83555a0ac935b8a8","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
         crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
+    <script>
+        function downloadQrCode() {
+    let x = document.querySelector('#download-qr-btn');
+    x.addEventListener("click", function() {
+      document.querySelector("#qr-code").click();
+    })
+    
+};
+downloadQrCode();
+    </script>
 </body>
 
 </html>

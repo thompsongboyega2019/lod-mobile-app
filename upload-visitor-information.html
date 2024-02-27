@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>LOD Realtors - Upload Visitor Information</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+
+    <link rel="stylesheet" href="css/demo.css">
+
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="home d-flex flex-column vh-100">
+        <div class="bg-white shadow-sm app-header">
+            <div class="d-flex align-items-center justify-content-between mb-auto p-3 osahan-header">
+                <div class="d-flex align-items-center gap-2 me-auto">
+                    <a href="javascript:history.back()" class="text-dark bg-white shadow rounded-circle icon">
+                        <span class="mdi mdi-arrow-left mdi-18px text-secondary"></span></a>
+
+                </div>
+                <div class="d-flex align-items-center gap-2">
+
+                    <a href="#"><img src="img/profile/favorite-4.jpg" alt class="img-fluid rounded-circle icon"></a>
+                    <a href="#" class="bg-white shadow rounded-circle icon">
+                        <span class="mdi mdi-bell-outline mdi-18px text-primary"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="vh-100 my-auto overflow-auto px-3 pt-4 mt-60">
+            <form action="qr-code-for-visitor.html">
+                <div class="mb-3">
+                    <label for="exampleFormControlVisitorName" class="form-label mb-1 fw-bold">Visitor's Name</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlVisitorName">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="Visitor name" aria-describedby="visitorname" value="">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlVisitorPhoneNumber" class="form-label mb-1 fw-bold">Visitor's Phone
+                        Number</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlVisitorPhoneNumber">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="Visitor Phone number" aria-describedby="visitorphonenumber">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="chooseVisitorType" class="form-label mb-1 fw-bold">Visitor Type</label>
+                    <select id="visitor-type" class="form-control form-select form-select-lg py-1 fs-6" name="" onchange="chooseVisitorType()">
+                        <option value="">-- Visitor type --</option>
+                        <option value="1">Individual</option>
+                        <option value="2">Family</option>
+                        <option value="3">Company</option>
+                    </select>
+                </div>
+                <div class="mb-3 family-info d-none">
+                    <label for="exampleFormControlFamilyName" class="form-label mb-1 fw-bold">Family Name</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlFamilyName">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="FamilyName" aria-describedby="familyname">
+                    </div>
+                </div>
+                <div class="mb-3 family-info d-none">
+                    <label for="exampleFormControlFamilyAddress" class="form-label mb-1 fw-bold">Family Residential Address</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlFamilyAddress">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="FamilyAddress" aria-describedby="familyaddress">
+                    </div>
+                </div>
+                <div class="mb-3 company-info d-none">
+                    <label for="exampleFormControlCompanyName" class="form-label mb-1 fw-bold">Company Name</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlCompanyName">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="CompanyName" aria-describedby="companyname">
+                    </div>
+                </div>
+                <div class="mb-3 company-info d-none">
+                    <label for="exampleFormControlVisitorTitle" class="form-label mb-1 fw-bold">Visitor Title</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlVisitorTitle">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="VisitorTitle" aria-describedby="visitortitle">
+                    </div>
+                </div>
+                <div class="mb-3 company-info d-none">
+                    <label for="exampleFormControlCompanyAddress" class="form-label mb-1 fw-bold">Company
+                        Address</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlCompanyAddress">
+                        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-3 fs-14"
+                            aria-label="CompanyAddress" aria-describedby="companyaddress">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlPurpose" class="form-label mb-1 fs-16 fw-bold">Purpose</label>
+                    <div class="input-group border bg-white rounded-3 py-1" id="exampleFormControlPurpose">
+                        <textarea name="" id="" class="form-control bg-transparent rounded-0 border-0 py-1" cols="30"
+                            rows="5"></textarea>
+
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-info btn-lg w-100 rounded-4 mb-2 mt-4">Generate QR Code</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <nav id="main-nav">
+        <ul class="second-nav">
+            <li class="osahan-user-profile bg-primary">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="img/logo.png" alt class="rounded-pill img-fluid">
+
+                </div>
+            </li>
+            <li><a href="dashboard.html"><span class="mdi mdi-home-variant-outline me-3"></span>Dashboard</a></li>
+            <li>
+                <a href="#"><span class="mdi mdi-account-details-outline me-3"></span>Profile & IDs</a>
+            </li>
+            <li>
+                <a href="#"><span class="mdi mdi-home-lightning-bolt-outline me-3"></span>Bills/Utilities</a>
+            </li>
+            <li><a href="#"><span class="mdi mdi-vote-outline me-3"></span>Voting</a></li>
+            <li>
+                <a href="#"><span class="mdi mdi-car-info me-3"></span>Vehicle Identification</a>
+            </li>
+            <li>
+                <a href="#"><span class="mdi mdi-message-badge-outline me-3"></span>Information Dissemination</a>
+            </li>
+            <li><a href="#"><span class="mdi mdi-account-multiple-check-outline me-3"></span>Visitor Control</a></li>
+            <li><a href="#"><span class="mdi mdi-gesture-tap-button me-3"></span>Service Request</a></li>
+
+
+            <li><a href="#"><span class="mdi mdi-alert-outline me-3"></span>Complaint/Reporting</a></li>
+            <li>
+                <a href="#"><span class="mdi mdi-cash-check me-3"></span>Resident Fine</a>
+            </li>
+
+        </ul>
+        <ul class="bottom-nav">
+            <li class="home">
+                <a href="#">
+                    <p class="h5 m-0"><span class="mdi mdi-help"></span></p>
+                    Help
+                </a>
+            </li>
+            <li class="find">
+                <a href="">
+                    <p class="h5 m-0"><span class="mdi mdi-magnify"></span></p>
+                    Search
+                </a>
+            </li>
+            <li class="more">
+                <a href="#">
+                    <p class="h5 m-0"><span class="mdi mdi-logout"></span></p>
+                    Log Out
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="js/bootstrap.bundle.min.js" type="29f320448109687a03217736-text/javascript"></script>
+
+    <script src="js/jquery.min.js" type="29f320448109687a03217736-text/javascript"></script>
+
+    <script src="js/slick.min.js" type="29f320448109687a03217736-text/javascript"></script>
+
+    <script src="js/hc-offcanvas-nav.js" type="29f320448109687a03217736-text/javascript"></script>
+
+    <script src="js/script.js" type="29f320448109687a03217736-text/javascript"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="29f320448109687a03217736-|49" defer></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+        integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+        data-cf-beacon='{"rayId":"83555a0ac935b8a8","version":"2023.10.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","b":1}'
+        crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+    <script>
+       function chooseVisitorType() {
+    let a = document.getElementById("visitor-type");
+    let companyInfo = document.getElementsByClassName("company-info");
+    let familyInfo = document.getElementsByClassName("family-info");
+    switch (a.selectedIndex) {
+        case 1:
+            for (const x of companyInfo) {
+                x.classList.add("d-none");
+            };
+            for (const y of familyInfo) {
+                y.classList.add("d-none");
+            };
+            break;
+        case 2:
+            for (const x of companyInfo) {
+                x.classList.add("d-none");
+            };
+            for (const y of familyInfo) {
+                y.classList.remove("d-none");
+            };
+            break;
+        case 3:
+            for (const x of companyInfo) {
+                x.classList.remove("d-none");
+            };
+            for (const y of familyInfo) {
+                y.classList.add("d-none");
+            };
+
+            break;
+
+    };
+
+
+};
+        
+    </script>
+</body>
+
+</html>
