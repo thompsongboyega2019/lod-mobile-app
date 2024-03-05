@@ -877,4 +877,7 @@ span.text-primary {
 .show-wb-amount .wallet-balance-amount {
     display: inline-block !important;
 }
+.text-white {
+    color: var(--white) !important;
+}
 /*Custom CSS Ends*/
