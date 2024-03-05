@@ -758,7 +758,7 @@ span.text-primary {
     font-size: 15px !important;
 }
 .fs-16 {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 .fs-11 {
     font-size: 11px !important;
@@ -861,5 +861,20 @@ span.text-primary {
 }
 .view-all-votes > a {
     color: var(--primary);
+}
+.wallet-balance {
+   font-size: 1.5rem;
+}
+.show-wb-icon .wb-icon-1 {
+    display: none;
+} 
+.show-wb-icon .wb-icon-2 {
+    display: inline-block !important;
+}
+.show-wb-amount .wallet-balance-hidden {
+    display: none;
+}
+.show-wb-amount .wallet-balance-amount {
+    display: inline-block !important;
 }
 /*Custom CSS Ends*/
